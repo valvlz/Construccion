@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" xmlns:extensions="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="Construccion.Home"
+             BackgroundColor="#6FCFFF">
+
+    
+
+    <Grid>
+        <StackLayout Padding="30" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+            <Label Text=""/>
+            <Label Text="Bienvenido a Floristería Monet" TextColor="Black" FontAttributes="Bold" FontSize="Large" HorizontalTextAlignment="Center"/>
+            <Label Text=""/>
+            <Image Source="https://i.ibb.co/2WCtr3v/gardening.png"/>
+            <Label Text="Sorprende a tus seres queridos con un hermoso arreglo floral." TextColor="Black" FontAttributes="Italic" FontSize="Medium" HorizontalTextAlignment="Center"/>
+            <Label Text=""/>
+            <Label Text="Consulte nuestro catálogo completo" TextColor="Black" FontAttributes="Bold" FontSize="Large" HorizontalTextAlignment="Center"/>
+            <Label Text=""/>
+            <Button Padding="10" 
+                    HorizontalOptions="CenterAndExpand"
+                    Text="Clic aquí" 
+                    TextColor="Black" 
+                    BackgroundColor="#f26d63" 
+                    BorderColor="black" 
+                    BorderWidth="1" 
+                    CornerRadius="20"
+                    Clicked="Button_Catalogo"/>
+            <Label Text=""/>
+            <Label Text=""/>
+            <Label Text="Copyright © 2023 - Floristería Monet. Todos los derechos reservados." TextColor="Black" HorizontalTextAlignment="Center"/>
+
+        </StackLayout>
+        <!--
+        <CarouselView ItemsSource="{Binding MyImages}" Margin="20">
+            <CarouselView.EmptyView>
+                <Grid>
+                    <Label Text="CONSULTE NUESTRO CATÁLOGO COMPLETO"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                    <StackLayout>
+                        
+                    </StackLayout>
+                </Grid>
+            </CarouselView.EmptyView>
+        </CarouselView>
+        -->
+
+        <pv:PancakeView HorizontalOptions="End" VerticalOptions="End" Margin="30" CornerRadius="40" Padding="15">
+            <pv:PancakeView.BackgroundGradientStops>
+                <pv:GradientStopCollection>
+                    <pv:GradientStop Color="LightSlateGray" Offset="0"/>
+                    <pv:GradientStop Color="White" Offset="1"/>
+                </pv:GradientStopCollection>
+            </pv:PancakeView.BackgroundGradientStops>
+
+            <extensions:Expander Rotation="180" HorizontalOptions="Start" VerticalOptions="End">
+                <extensions:Expander.Header>
+                    <Image Source="https://cdn-icons-png.flaticon.com/512/9384/9384969.png"
+                           WidthRequest="30"
+                           HeightRequest="30"
+                           Rotation="180"/>
+                </extensions:Expander.Header>
+
+                <StackLayout Spacing="30" Margin="0,20">
+                    <ImageButton Source="https://cdn-icons-png.flaticon.com/512/3132/3132084.png" WidthRequest="35" HeightRequest="35" Background="transparent" Clicked="Button_Config"/>
+                    <ImageButton Source="https://cdn-icons-png.flaticon.com/512/921/921347.png" Rotation="180" WidthRequest="35" HeightRequest="35" Background="transparent" Clicked="Button_AboutUs"/>
+                    <ImageButton Source="https://cdn-icons-png.flaticon.com/512/1574/1574351.png" Rotation="180" WidthRequest="35" HeightRequest="35" Background="transparent" Clicked="Button_LogOut"/>
+                </StackLayout>
+            </extensions:Expander>
+            
+        </pv:PancakeView>
+        
+    </Grid>
+    
+    
+    
+    
+</ContentPage>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Construccion.Configuracion"
+             BackgroundColor="#6FCFFF"
+             Title="Configuración">
+    
+    <ContentPage.Content>
+        <StackLayout Padding="30" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Frame
+                VerticalOptions="Center"
+                Margin="12" 
+                CornerRadius="20"
+                BackgroundColor="white"
+                BorderColor="AliceBlue" 
+                
+                >
+
+                <StackLayout>
+
+                    <Label Text="Configuración de la cuenta" TextColor="Black" FontAttributes="Bold" FontSize="Large" HorizontalTextAlignment="Center"/>
+                    
+                    <Label Text="Pausar notificaciones push" TextColor="LightGray" FontSize="15" HorizontalOptions="Center"/>
+
+                    <Switch  OnColor="Green" ThumbColor="Black" HorizontalOptions="EndAndExpand"/>
+
+
+                    <Entry 
+                        Text="Correo electrónico" 
+                        TextColor="black"
+                        HorizontalTextAlignment="Center"/>
+
+                    <Entry 
+                        Text="Nombre completo" 
+                        TextColor="black"
+                        HorizontalTextAlignment="Center"/>
+
+                    <Entry 
+                        Text="Usuario" 
+                        TextColor="black"
+                        HorizontalTextAlignment="Center"/>
+
+                    <Entry 
+                        Text="Contraseña" 
+                        TextColor="black"
+                        HorizontalTextAlignment="Center"/>
+                    <Label/>
+                    
+                    <Button 
+                        Padding="5" 
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Actualizar" 
+                        TextColor="Black" 
+                        BackgroundColor="Yellow" 
+                        BorderColor="black" 
+                        BorderWidth="1" 
+                        CornerRadius="20" 
+                        FontAttributes="Bold"/>
+
+                    <Button 
+                        Padding="5" 
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Eliminar cuenta" 
+                        TextColor="Black" 
+                        BackgroundColor="red" 
+                        BorderColor="black" 
+                        BorderWidth="1" 
+                        CornerRadius="20" 
+                        FontAttributes="Bold"/>
+
+
+                </StackLayout>
+
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Construccion.Registro"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#6FCFFF">
+    <ContentPage.Content>
+        <StackLayout Padding="30" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Frame
+                VerticalOptions="Center"
+                Margin="12" 
+                CornerRadius="20"
+                BackgroundColor="white"
+                BorderColor="AliceBlue" 
+                
+                >
+
+                <StackLayout>
+
+                    <Image Source="https://i.pinimg.com/originals/97/97/51/979751132844654bdd36339ac1c6ad17.jpg"/>
+
+                    <Label HorizontalOptions="Center" >
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span 
+                                    Text="Regístrate y regala las mejores flores." 
+                                    TextColor="gray"
+                                    FontSize="Subtitle"
+                                    />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+
+                    <Button 
+                        Padding="10" 
+                        HorizontalOptions="CenterAndExpand"
+                        Text=" Ingresa con Gmail" 
+                        TextColor="Black" 
+                        BackgroundColor="White" 
+                        BorderColor="black" 
+                        BorderWidth="1" 
+                        CornerRadius="30" 
+                        ImageSource="https://download.seaicons.com/icons/dakirby309/simply-styled/72/Gmail-icon.png"
+                        ContentLayout="left,1"/>
+
+
+                    <Label 
+                        HorizontalOptions="Center"
+                        Text="___________  OR   ___________"
+                        TextColor="#C2c2c2"
+                           />
+
+
+                    <Entry 
+                        x:Name="txtNewEmail" 
+                        Placeholder="Correo electrónico" 
+                        TextColor="black" 
+                        PlaceholderColor="#C2c2c2" 
+                        HorizontalTextAlignment="Center"/>
+
+                    <Entry 
+                        x:Name="txtNewFullName" 
+                        Placeholder="Nombre completo" 
+                        TextColor="black" 
+                        PlaceholderColor="#C2c2c2" 
+                        HorizontalTextAlignment="Center"/>
+
+                    <Entry 
+                        x:Name="txtNewUser" 
+                        Placeholder="Usuario" 
+                        TextColor="black" 
+                        PlaceholderColor="#C2c2c2" 
+                        HorizontalTextAlignment="Center"/>
+
+                    <Entry 
+                        x:Name="txtNewPassword" 
+                        Placeholder="Contraseña" 
+                        IsPassword="True" 
+                        TextColor="Black" 
+                        PlaceholderColor="#C2c2c2" 
+                        HorizontalTextAlignment="Center"/>
+
+                    <CheckBox 
+                        Color="#6FCFFF"
+                        IsChecked="true" /> 
+                    
+                    <Label 
+                        HorizontalOptions="Center"
+                        
+                        Text="Al registrarse, usted acepta nuestros Términos , Política de Privacidad y Política de Cookies ."
+                        TextColor="#C2c2c2"
+                           />
+
+                    <Button 
+                        Padding="10" 
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Registrarse" 
+                        TextColor="Black" 
+                        BackgroundColor="#f26d63" 
+                        BorderColor="black" 
+                        BorderWidth="1" 
+                        CornerRadius="20" />
+
+
+                </StackLayout>
+                
+                
+                
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

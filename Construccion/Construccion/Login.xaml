@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Construccion.Login" 
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#6FCFFF"
+             >
+    
+    <ContentPage.Content>
+
+        <StackLayout Padding="30" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+
+           
+            <Frame 
+                VerticalOptions="Center"
+                Margin="12" 
+                CornerRadius="20"
+                BackgroundColor="white"
+                BorderColor="AliceBlue" 
+                
+                >
+                
+                
+                <StackLayout>
+
+                    <Image Source="https://i.pinimg.com/originals/97/97/51/979751132844654bdd36339ac1c6ad17.jpg"/>
+                    
+                    <Entry 
+                        x:Name="txtUserName" 
+                        Placeholder="Usuario o correo electrónico" 
+                        TextColor="black" 
+                        PlaceholderColor="#C2c2c2" 
+                        HorizontalTextAlignment="Center"/>
+
+                    <Entry 
+                        x:Name="txtPassword" 
+                        Placeholder="Contraseña" 
+                        IsPassword="True" 
+                        TextColor="Black" 
+                        PlaceholderColor="#C2c2c2" 
+                        HorizontalTextAlignment="Center"/>
+
+                    <Button 
+                        Padding="10" 
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Ingresar" 
+                        TextColor="Black" 
+                        BackgroundColor="#f26d63" 
+                        BorderColor="black" 
+                        BorderWidth="1" 
+                        CornerRadius="20" 
+                        Clicked="Button_Clicked"/>
+
+
+                    <Label HorizontalOptions="Center" >
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span 
+                                    Text="¿No tienes cuenta?" 
+                                    TextColor="black"/>
+                                    <!---->
+                                <Span 
+                                    Text="Crea una cuenta" 
+                                    TextColor="Black" 
+                                    FontAttributes="Bold" 
+                                    TextDecorations="Underline"/>
+
+                            </FormattedString>
+                        </Label.FormattedText>
+
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
+
+                            </TapGestureRecognizer>
+
+                        </Label.GestureRecognizers>
+
+                    </Label>
+                </StackLayout>
+            </Frame>
+
+            
+            
+            <!---Definir cuantos clicks dará el usuario el vinculo-->
+            
+            
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
